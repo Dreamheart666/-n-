@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <windows.h>
+#include<string.h>
+#include <math.h>
+#include<windows.h>
+int Fac1(int n)
+{
+	if (n <= 1)
+	{
+		return 1;
+	}
+	else
+	{
+		return n*Fac1(n - 1);
+	}
+}
+int main()
+{
+	int n = 0;
+	scanf("%d", &n);
+	int i=Fac1(n);
+	printf("%d", i);
+	return 0;
+}
